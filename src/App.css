@@ -1,0 +1,254 @@
+/*=============================
+  General
+===============================*/
+
+/*Sola Normalize*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+}
+
+:root {
+  --primary-color-regular: #77AF44;
+  --primary-color-light: #69B227;
+  --primary-color-dark: #659B34;
+}
+
+img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+button {
+	background-color: transparent;
+	padding: 0;
+	border-width: 0;
+	border-style: 0;
+	border-color: transparent;
+}
+
+button:focus {
+  outline: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*Sola Utility Classes*/
+
+a.cover-link {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0
+}
+
+.color-overlay {
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.54); /*Change this line if project requires different color or gradient*/
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.background-image-wrapper {
+	/*The element containing this class also needs a height set. You can target the element or add a sibling class. Height can be set by padding, min-height, or height, depending upon specific case. The element containing this class needs an <img> with the class .background-image.*/
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  background-color: #77AF44;
+  background-color: var(--primary-color-regular);
+}
+
+img.background-image {
+  /*Theparentofthe<img>needstohavethe.background-image-wrapperclassaswellasaheightset(canbesetbypadding,min-height,orheight,dependinguponspecificcasetransform: scale(1.05);
+  */object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: transform .6s;
+  -webkit-transition: transform .6s;
+  -moz-transition: transform .6s;
+  -ms-transition: transform .6s;
+  -o-transition: transform .6s;
+}
+
+.background-image-wrapper.scale:hover > img.background-image {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: transform .6s;
+  -webkit-transition: transform .6s;
+  -moz-transition: transform .6s;
+  -ms-transition: transform .6s;
+  -o-transition: transform .6s;
+}
+
+/* Must Style */
+
+*::selection /*Can adjust values as needed. This changes highlighte text. */ {
+	background-color: #222222; /*Change to Primary Color*/
+	color: #ffffff; /*Change if necessary*/
+}
+
+/*=============================
+===============================
+  Utility-classes
+===============================
+===============================*/
+
+/*===============================
+    Utility-classes
+  ===============================*/
+
+/*=== Utility-classes - Mobile+ ===*/
+
+.js-noscroll {
+	overflow: hidden;
+}
+
+.container {
+  padding: 15px;
+}
+
+.article-label {
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.background-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.02);
+}
+
+/* ======= Utility-classes - Tablet+ ======= */
+@media (min-width: 768px) {
+
+  .container {
+    padding: 40px;
+  }
+
+  .article-label {
+    font-size: 12px;
+  }
+
+}
+
+/* ======= Utility-classes - Desktop+ ======= */
+@media (min-width: 992px) {
+
+  .container {
+    padding: 50px;
+  }
+  
+  .grey-background {
+    position: relative;
+  }
+
+  .grey-background::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: calc(50% + 25px);
+    margin: 0 -50vw;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    z-index: -1;
+    background-color: #F6F6F6;
+  }
+
+
+}
+
+/* =======Container - Extra Desktop+ ======= */
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 1080px;
+    padding-right: 0;
+    padding-left: 0; 
+    margin: 0 auto;
+  }
+
+}
+
+/* =======Container - Extra Desktop+ ======= */
+@media (min-width: 1600px) {
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0; 
+  }
+
+  .big-container {
+    max-width: 1440px;
+    margin: 0 auto; 
+    padding-right: 0;
+    padding-left: 0; 
+  }
+
+}

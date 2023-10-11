@@ -1,0 +1,167 @@
+/*===============================
+    Share-Posts
+  ===============================*/
+
+/* ======= Share-Posts - Mobile+ ======= */
+
+.share-posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  border-bottom: 1px solid rgba(34, 34, 34, .09);
+}
+
+.share-posts > button {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, .8);
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: color .25s;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+}
+
+.share-posts > button > span {
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.share-posts > button svg {
+  width: 10px;
+}
+
+.share-posts > button svg path {
+  fill: rgba(34, 34, 34, .8);
+  transition: fill .25s;
+  -webkit-transition: fill .25s;
+  -moz-transition: fill .25s;
+  -ms-transition: fill .25s;
+  -o-transition: fill .25s;
+}
+
+.social-share-posts {
+  padding: 15px 10px;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  z-index: 2;
+  top: -32px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.16);
+  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.16);
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.social-share-posts::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fff;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.social-share.js-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-share-posts > button {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share-posts > button:hover,
+.share-posts > button:focus,
+.share-posts > button:active,
+.share-posts > button.js-touch {
+  color: #77AF44;
+  color: var(--primary-color-regular);
+}
+
+.social-share-posts > button svg {
+  width: 14px;
+}
+
+.social-share-posts > button svg path {
+  fill: #000000;
+  transition: fill .25s;
+  -webkit-transition: fill .25s;
+  -moz-transition: fill .25s;
+  -ms-transition: fill .25s;
+  -o-transition: fill .25s;
+}
+
+.share-posts > button:hover svg path,
+.share-posts > button:focus svg path,
+.share-posts > button:active svg path,
+.share-posts > button.js-touch svg path,
+.social-share-posts > button:hover svg path,
+.social-share-posts > button:focus svg path,
+.social-share-posts > button:active svg path,
+.social-share-posts > button.js-touch svg path  {
+  fill: #77AF44;
+  fill: var(--primary-color-regular);
+}
+
+.copied {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  height: 40px;
+  padding: 15px 14px 12px;
+  font-size: 12px;
+  color: #bf2e1a;
+  z-index: 100;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* ======= Share-Posts - Large Mobile+ ======= */
+
+@media (min-width: 480px) {}
+
+/* ======= Share-Posts - Tablet+ ======= */
+
+@media (min-width: 768px) {
+
+  .share-posts {
+    padding: 26px;
+  }
+}

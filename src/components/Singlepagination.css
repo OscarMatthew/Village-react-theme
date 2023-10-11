@@ -1,0 +1,148 @@
+/*===============================
+    Posts-Pagination
+  ===============================*/
+
+/* ======= Posts-Pagination - Mobile+ ======= */
+
+.posts-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 15px;
+}
+
+.posts-pagination > div {
+  position: relative;
+  padding: 10px;
+  width: 130px;
+}
+
+.posts-pagination > div::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  z-index: -1;
+  color: rgba(0,0,0,0.03);
+  text-transform: uppercase;
+}
+
+.posts-pagination > div.previous::before {
+  content: "Previous";
+  left: 18px;
+}
+
+.posts-pagination > div.next::before {
+  content: "next";
+  right: 18px;
+}
+
+.posts-pagination > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 18px;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 20px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 1px 2px 20px 0px rgba(0,0,0,0.16);
+  box-shadow: 1px 2px 20px 0px rgba(0,0,0,0.16);
+}
+
+.posts-pagination > div.previous::after {
+  left: 0;
+}
+
+.posts-pagination > div.next::after {
+  right: 0;
+}
+
+.posts-pagination div.background-image-wrapper {
+  padding: 8px 10px 5px;
+} 
+
+.posts-pagination div.background-image-wrapper > h1 {
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.posts-pagination .next div.background-image-wrapper > h1 {
+  text-align: right;
+}
+
+.posts-pagination > div:hover .scale > img.background-image,
+.posts-pagination > div.js-touch .scale > img.background-image {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* ======= Posts-Pagination - Large Mobile+ ======= */
+
+@media (min-width: 480px) {}
+
+/* ======= Posts-Pagination - Tablet+ ======= */
+
+@media (min-width: 768px) {
+
+  .posts-pagination {
+    padding: 60px 30px;
+  }
+  
+  .posts-pagination > div {
+    padding: 22px;
+    width: 260px;
+  }
+  
+  .posts-pagination > div::before {
+    top: 2px;
+    font-size: 30px;
+  }
+  
+  .posts-pagination > div::after {
+    width: 44px;
+  }
+  
+  .posts-pagination > div.previous::before {
+    left: 44px;
+  }
+
+  .posts-pagination > div.next::before {
+    right: 44px;
+  }
+
+  .posts-pagination div.background-image-wrapper {
+    padding: 15px 35px 12px;
+  } 
+  
+  .posts-pagination div.background-image-wrapper > h1 {
+    font-size: 16px;
+  }
+
+}
+
+/* ======= Posts-Pagination - Desktop+ ======= */
+
+@media (min-width: 992px) {
+
+  .posts-pagination {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 85px 0;
+  }  
+
+}
+
+/* ======= Posts-Pagination - Large Desktop+ ======= */
+@media (min-width: 1200px) {}
+
+/* ======= Share-Posts - Desktop+ ======= */
+@media (min-width: 992px) {}
+/* ======= Share-Posts - Large Desktop+ ======= */
+@media (min-width: 1200px) {}

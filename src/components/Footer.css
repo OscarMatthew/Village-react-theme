@@ -1,0 +1,242 @@
+/*===============================
+     Primary Footer
+  ===============================*/
+
+/* ====Primary-Footer - Mobile+ ==== */
+
+.main-footer {
+  background-color: #272727;
+  color: #fff;
+  position: relative;
+}
+
+/* Footer-Logo */
+
+.footer-logo {
+  display: block;
+  padding: 20px 25px 25px;
+}
+
+.footer-logo > a {
+  display: block;
+  width: 100%;
+}
+
+.footer-logo > a img {
+  margin: 0 auto;
+}
+
+.footer-logo a > h1 {
+  text-align: center;
+}
+
+/* End-Footer-Logo */
+
+/* Footer-Share */
+
+.footer-share {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-share > a {
+  font-size: 9px;
+  padding: 8px;
+  margin: 0 6px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  transition: color .25s, border-color .25s;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-transition: color .25s, border-color .25s;
+  -moz-transition: color .25s, border-color .25s;
+  -ms-transition: color .25s, border-color .25s;
+  -o-transition: color .25s, border-color .25s;
+}
+
+.footer-share > a:hover,
+.footer-share > a:focus,
+.footer-share > a.js-touch {
+  color: #69B227;
+  color: var(--primary-color-light);
+  border-color: #69B227;
+  border-color: var(--primary-color-light);
+}
+
+.footer-share > a:active {
+  color: #659B34;
+  color: var(--primary-color-dark);
+  border-color: #659B34;
+  border-color: var(--primary-color-dark);
+}
+
+/* End-Footer-Share */
+
+/* Credit */
+
+.copy-credit {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 15px 10px 0;
+  text-align: center;
+  color: #707070;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-bar {
+  padding: 0 5px 5px;
+}
+
+.credit > a {
+  color: #fff;
+  -webkit-transition: .25s;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+  margin-left: 6px;
+}
+
+.credit > a:hover,
+.credit > a:focus,
+.credit > a.js-touch {
+  opacity: .8;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+.credit > a:hover .logo-icon-top,
+.credit > a:hover .logo-icon-bottom,
+.credit > a:focus .logo-icon-top,
+.credit > a:focus .logo-icon-bottom {
+  fill: #69B227;
+  fill: var(--primary-color-light);
+  -webkit-transition: fill .25s;
+  transition: fill .25s;
+}
+
+.credit > a svg {
+  margin-bottom: -5px;
+}
+
+svg.solasites-logo {
+  width: 110px;
+}
+
+.logo-sola, 
+.logo-sites {
+  fill: #fff;
+}
+
+.logo-icon-top, 
+.logo-icon-bottom {
+  fill: #fff;
+  transition: fill .25s;
+  -webkit-transition: fill .25s;
+  -moz-transition: fill .25s;
+  -ms-transition: fill .25s;
+  -o-transition: fill .25s;
+}
+
+.logo-sites, 
+.logo-icon-bottom {
+  opacity: .6;
+}
+
+/* End Credit */
+
+/* ====Primary-Footer - Tablet+ ==== */
+
+@media (min-width: 768px) {
+
+  .primary-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Footer-Logo */
+
+  .footer-logo {
+    padding: 0;
+    order: 0;
+    margin-right: auto;
+  }
+
+  .footer-logo a > h1 {
+    text-align: left;
+  }
+
+  .footer-logo > a img {
+    margin-left: initial;
+  }
+
+  /* End-Footer-Logo */
+
+  /* Footer-Share */
+
+  .footer-share {
+    padding: 0;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .footer-share > a {
+    font-size: 11px;
+    width: 30px;
+    height: 30px;
+    margin: 0 7px;
+  }
+
+  .footer-share > a:last-child {
+    margin-right: 0;
+  }
+
+  /* End-Footer-Share */
+  
+  /* Credit */
+  
+  .copy-credit {
+    order: 1;
+    padding: 0;
+    min-width: 260px;
+    border: 0px;
+  }
+  
+  /* End Credit */
+
+}
+
+/* ====Primary-Footer - Desktop+ ==== */
+
+@media (min-width: 992px) {
+  
+  .footer-logo {
+    margin-left: 0;
+  }
+
+  /* Footer-Share */
+
+  .footer-share > a {
+    font-size: 12px;
+    width: 34px;
+    height: 34px;
+    margin: 0 10px;
+  }
+
+  /* End-Footer-Share */
+
+  .footer-address,
+  .copy-credit {
+    font-size: 16px;
+  }
+
+}

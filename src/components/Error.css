@@ -1,0 +1,121 @@
+/*===============================
+  ===============================
+    Error
+  ===============================
+  ===============================*/
+
+/*===============================
+    Error
+  ===============================*/
+
+/* ======= Error - Mobile+ ======= */
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
+  height: calc(100vh - 60px);
+}
+
+.error h1 {
+  color: #282828;
+  font-size: 100px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: -28px;
+}
+
+.error p {
+  color: #282828;
+  font-size: 14px;
+  margin: 20px 0;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.error a {
+  color: #fff;
+  padding: 9px 50px;
+  border-radius: 100px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  background-color: #77AF44;
+  background-color: var(--primary-color-regular);
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: background-color .25s;
+  -webkit-transition: background-color .25s;
+  -moz-transition: background-color .25s;
+  -ms-transition: background-color .25s;
+  -o-transition: background-color .25s;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.error a:hover,
+.error a:focus,
+.error a.js-touch {
+  background-color: #69B227;
+  background-color: var(--primary-color-light);
+}
+
+.error a:active {
+  background-color: #659B34;
+  background-color: var(--primary-color-dark);
+}
+
+/* ======= Error - Large Mobile+ ======= */
+
+@media (min-width: 480px) {}
+
+/* ======= Error - Tablet+ ======= */
+@media (min-width: 768px) {
+
+  .error {
+    height: calc(100vh - 65px);
+  }
+  
+  .error h1 {
+    font-size: 160px;
+    margin: 0;
+  }
+  
+  .error p {
+    font-size: 20px;
+  }
+  
+  .error a {
+    padding: 16px 140px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+}
+/* ======= Error - Desktop+ ======= */
+
+@media (min-width: 992px) {
+
+  .error {
+    height: calc(100vh - 150px);
+  }
+  
+  .error h1 {
+    font-size: 170px;
+  }
+  
+  .error a {
+    margin-top: 70px;
+  }
+
+}
+
+/* ======= Error - Large Desktop+ ======= */
+
+@media (min-width: 1200px) {}

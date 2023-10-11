@@ -1,0 +1,166 @@
+/*===============================
+    Single-Author
+  ===============================*/
+
+/* ======= Single-Author - Mobile+ ======= */
+
+.featured-single-author {
+  position: relative;
+  background-color: #F6F6F6;
+  z-index: 0;
+}
+
+.featured-single-author > div {
+  position: relative;
+  padding: 50px 15px;
+}
+
+.featured-single-author > div > h1 {
+  font-size: 60px;
+  margin: 0 0 -50px;
+  letter-spacing: 2px;
+  color: rgba(0,0,0,0.02);
+  text-transform: uppercase;
+}
+
+.single-author-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.author-image {
+  position: relative;
+  padding: 22px;
+}
+
+.author-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 44px;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 20px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 1px 2px 20px 0px rgba(0,0,0,0.16);
+  box-shadow: 1px 2px 20px 0px rgba(0,0,0,0.16);
+}
+
+.author-image > img {
+  width: 96px;
+  height: 96px;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.author-content {
+  width: calc(100% - 140px);
+}
+
+.author-content:first-child {
+  width: 100%;
+}
+
+.author-content > .article-label {
+  color: #77AF44;
+  color: var(--primary-color-regular);
+}
+
+.author-content > h1 {
+  font-size: 30px;
+  margin: 5px 0;
+  font-weight: 700;
+  color:#000713;
+}
+
+.author-content > p {
+  display: none;
+} 
+
+.single-author-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 30px 0 0;
+  color: #3B3B3B;
+  width: 100%;
+}
+
+/* ======= Single-Author - Large Mobile+ ======= */
+
+@media (min-width: 480px) {}
+
+/* ======= Single-Author - Tablet+ ======= */
+
+@media (min-width: 768px) {
+  
+  .featured-single-author > div {
+    padding: 60px 0px;
+    max-width: 730px;
+    margin: 0 auto;
+  }
+  
+  .featured-single-author > div > h1 {
+    font-size: 150px;
+    letter-spacing: 12px;
+    margin-bottom: -150px;
+  }
+  
+  .author-image {
+    padding: 40px;
+  }
+  
+  .author-image::before {
+    width: 80px;
+  }
+  
+  .author-image > img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .author-content {
+    width: calc(100% - 200px);
+  }
+  
+  .author-content > h1 {
+    font-size: 36px;
+  }
+
+  .author-content > p {
+    display: block;
+    color: rgba(34, 34, 34, .9);
+  } 
+
+  .single-author-content p {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .single-author-content > p {
+    display: none;
+  }
+  
+}
+
+/* ======= Single-Author - Desktop+ ======= */
+
+@media (min-width: 992px) {
+
+  .featured-author {
+    padding: 80px 45px;
+  }
+  
+  .featured-author > h1 {
+    font-size: 200px;
+  }
+  
+  .featured-author-content {
+    margin: -150px auto 0;
+    max-width: 755px;
+  }
+
+}
